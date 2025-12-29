@@ -24,8 +24,18 @@
 </label>
 
 <label>
-  Charge(s):
-  <select id="charges" multiple></select>
+  Search charges:
+  <input type="text" id="chargeSearch" placeholder="Search code or offense">
+</label>
+
+<label>
+  Available charges (click to add):
+  <ul id="chargeList" class="charge-list"></ul>
+</label>
+
+<label>
+  Selected charges:
+  <ul id="selectedCharges" class="selected-list"></ul>
 </label>
 
 <label>
@@ -46,6 +56,6 @@
 <h2>Generated Markdown</h2>
 <textarea id="output" readonly rows="10"></textarea>
 
-<script src="script.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
