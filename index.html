@@ -1,1 +1,51 @@
-<p>HI</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arrest Logs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<label>
+  Arrestee username:
+  <input type="text" id="arrestee">
+</label>
+
+<label>
+  Agency:
+  <select id="agency">
+    <option value="">Select agency</option>
+    <option>CANG</option>
+    <option>CBI</option>
+    <option>CFWS</option>
+    <option>PIT</option>
+  </select>
+</label>
+
+<label>
+  Charge(s):
+  <select id="charges" multiple></select>
+</label>
+
+<label>
+  Incident summary:
+  <textarea id="description" rows="4"></textarea>
+</label>
+
+<label>
+  Evidence (URL):
+  <input type="text" id="evidence">
+</label>
+
+<div class="buttons">
+  <button onclick="copyOutput()">Copy</button>
+  <button onclick="clearAll()">Clear</button>
+</div>
+
+<h2>Generated Markdown</h2>
+<textarea id="output" readonly rows="10"></textarea>
+
+<script src="script.js"></script>
+</body>
+</html>
